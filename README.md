@@ -4,7 +4,7 @@ Code for 30th November 2019
 Starting Instructions:
 
 * Clone this repo
-* Immediately copy `kelston.py` and rename it to your name (eg `tim.py`)
+* Immediately copy `challenges.py` and rename it to your name (eg `tim.py`)
 * Git Add - Commit - Push
 
 Then, inside *your* version of the code (eg `tim.py`):
