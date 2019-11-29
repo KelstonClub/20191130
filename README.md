@@ -14,3 +14,6 @@ Then, inside *your* version of the code (eg `tim.py`):
 * Implement a solution
 * Remember that you need to *return* an answer; not just *print* it
 
+When you've finished (or when the time is up):
+
+* Git Commit - Push
