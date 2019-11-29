@@ -1,6 +1,6 @@
 import unittest
 
-import tim as challenges
+import challenges
 
 class TestChallenges(unittest.TestCase):
 
