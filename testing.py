@@ -1,11 +1,11 @@
 import unittest
 
-import challenges
+import tim as challenges
 
 class TestChallenges(unittest.TestCase):
 
     def test_fizz(self):
-        actual = challenges.fizz(10)
+        actual = list(challenges.fizz(10))
         expected = [1, 2, 3, 4, 5, 6, 'Fizz', 8, 9, 10]
         self.assertEqual(actual, expected)
 
@@ -15,8 +15,8 @@ class TestChallenges(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     def test_triangular_numbers(self):
-        actual = challenges.triangular_numbers(5)
-        expected = [1, 2, 3, 6, 10]
+        actual = list(challenges.triangular_numbers(5))
+        expected = [1, 3, 6, 10, 15]
         self.assertEqual(actual, expected)
 
     def test_backwards(self):
@@ -27,7 +27,7 @@ class TestChallenges(unittest.TestCase):
     def test_secret_santa(self):
         candidates = ["Person %d" % (i + 1) for i in range(6)]
         people = set(candidates)
-        actual = challenges.secret_santa(people)
+        actual = list(challenges.secret_santa(candidates))
         givers = set(g for g, r in actual)
         recipients = set(r for g, r in actual)
         self.assertEqual(people, givers)
@@ -38,12 +38,9 @@ class TestChallenges(unittest.TestCase):
 
     def test_anagrams(self):
         import itertools
-        candidate = "LETTER"
-        actual = challenges.anagrams(candidate)
-        words = set(open("words.txt").read().split())
-        candidates = set("".join(p) for p in itertools.permutations(candidate))
-        candidates.remove(candidate)
-        expected = candidates & words
+        candidate = "wander"
+        actual = set(challenges.anagrams(candidate))
+        expected = set(["warned", "redawn", "andrew", "warden"])
         self.assertEqual(actual, expected)
 
 if __name__ == "__main__":
