@@ -27,6 +27,19 @@ def fizz(until_n):
     return result
 
 
+def factorial(n):
+    """Return the factorial of n
+
+    A factorial is a number multiplied by all the numbers before it until 1
+    It's written as the number followed by an exclamation mark: 5!
+    So 5! = 5 * 4 * 3 * 2 * 1 = 120
+
+    eg factorial(4) should return:
+    24
+    """
+    raise NotImplementedError
+
+
 def triangular_numbers(n):
     """Return the list of the first n triangular_numbers
 
