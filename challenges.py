@@ -3,7 +3,12 @@
 One challenge is already implemented so you can get get the idea (not
 that it's difficult...). You can look up as much as you like on the internet
 but I will expect you to understand the code you implement, so don't just
-Cargo Cult it
+Cargo Cult it.
+
+There are two aspects to the result:
+
+1) That it passes the test (the "Engineer's" result)
+2) That it does is elegantly, efficiently and perhaps interestingly (the "Programmer's" result)
 
 NB Your solution has to return the result, not just print it!
 """
@@ -25,6 +30,24 @@ def fizz(until_n):
         n += 1
 
     return result
+
+
+def numbers(n):
+    """Return a list of the first n numbers
+
+    eg numbers(8) should return:
+    [1, 2, 3, 4, 5, 6, 7, 8]
+    """
+    raise NotImplementedError
+
+
+def odd_numbers(n):
+    """Return a list of the first n odd numbers
+
+    eg odd_numbers(5) should return:
+    [1, 3, 5, 7, 9]
+    """
+    raise NotImplementedError
 
 
 def factorial(n):
