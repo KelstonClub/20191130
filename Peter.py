@@ -42,7 +42,7 @@ def numbers(n):
     for i in range(n):
         n_list.append(i)
     n_list.append(i+1)
-    print(n_list)
+    return n_list
 
 
 def odd_numbers(n):
@@ -57,7 +57,7 @@ def odd_numbers(n):
     while len(n_list) != n:
         counter = counter+2
         n_list.append(counter)
-    print(n_list)
+    return n_list
 
 
 def factorial(n):
@@ -70,7 +70,12 @@ def factorial(n):
     eg factorial(4) should return:
     24
     """
-    raise NotImplementedError
+    answer = 1
+    counter = 1
+    while counter != n+1:
+        answer = counter * answer
+        counter = counter+1
+    return answer
 
 
 def triangular_numbers(n):
@@ -83,7 +88,10 @@ def triangular_numbers(n):
     eg triangular_numbers(5) should return:
     [1, 3, 6, 10, 15]
     """
-    raise NotImplementedError
+    list_answer = []
+    number_answer = 1
+    n_list = []
+    for i in range(n):
 
 
 def backwards(word):
@@ -127,4 +135,4 @@ def palindromes(n):
     raise NotImplementedError
 
 if __name__ == '__main__':
-    print(odd_numbers(7))
+    print(triangular_numbers(5))
