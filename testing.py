@@ -1,7 +1,7 @@
 #!python
 import unittest
 
-import challenges
+import tommy as challenges
 
 class TestChallenges(unittest.TestCase):
 

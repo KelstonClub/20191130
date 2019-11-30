@@ -39,6 +39,9 @@ def numbers(n):
     eg numbers(8) should return:
     [1, 2, 3, 4, 5, 6, 7, 8]
     """
+    #
+    # Expecting a string from an input()
+    #
     for i in range(int(n)):
         num_list.append(i + 1)
 
@@ -79,7 +82,7 @@ def factorial(n):
     """
     for i in range(n):
         var1 = n * (i + 1)
-        print(var1)
+        #~ print(var1)
 
 
     return n
@@ -107,24 +110,25 @@ def triangular_numbers(n):
         for j in range(len(list)):
             var1 += 1
             for z in range(var1):
-                print(z)
+                #~ print(z)
                 var2 += list[z]
 
             tri_list.append(var2)
 
-    print(tri_list)
+    #~ print(tri_list)
     '''
     for i in range(n):
         counter += 1
         list.append(i + 1)
         #print(list)
         for f in range(len(list)):
-            print(list)
+            #~ print(list)
             var1 += list[f]
             tri_list.append(var1)
-    list.clear()
+    list = []
 
-    print(tri_list)
+    #~ print(tri_list)
+    return tri_list
 
 
 triangular_numbers(5)

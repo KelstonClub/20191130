@@ -92,7 +92,7 @@ def triangular_numbers(n):
     number_answer = 1
     n_list = []
     for i in range(n):
-
+        pass
 
 def backwards(word):
     """Return the word with the letters in the opposite direction
