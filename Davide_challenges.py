@@ -33,24 +33,41 @@ def fizz(until_n):
 
 
 def numbers(n):
+    num_list = []
     """Return a list of the first n numbers
 
     eg numbers(8) should return:
     [1, 2, 3, 4, 5, 6, 7, 8]
     """
-    raise NotImplementedError
+    for i in range(int(n)):
+        num_list.append(i + 1)
+
+    return num_list
+
+
+#numbers(10)
+
 
 
 def odd_numbers(n):
+    odd_list = []
     """Return a list of the first n odd numbers
 
     eg odd_numbers(5) should return:
     [1, 3, 5, 7, 9]
     """
-    raise NotImplementedError
+    for i in range(int(n * 2)):
+        if i % 2 != 0:
+            odd_list.append(i)
+
+    return odd_list
+
+#print(odd_numbers(10))
+
 
 
 def factorial(n):
+    var1 = 0
     """Return the factorial of n
 
     A factorial is a number multiplied by all the numbers before it until 1
@@ -60,10 +77,21 @@ def factorial(n):
     eg factorial(4) should return:
     24
     """
-    raise NotImplementedError
+    for i in range(n):
+        var1 = n * (i + 1)
+        print(var1)
 
+
+    return n
+
+#print(factorial(5), "hello")
 
 def triangular_numbers(n):
+    counter = 0
+    var1 = 0
+    var2 = 0
+    list = []
+    tri_list = []
     """Return the list of the first n triangular_numbers
 
     A triangular number is one which consists of the first n numbers
@@ -73,7 +101,37 @@ def triangular_numbers(n):
     eg triangular_numbers(5) should return:
     [1, 3, 6, 10, 15]
     """
-    raise NotImplementedError
+    '''
+    for i in range(n):
+        list.append(i + 1)
+        for j in range(len(list)):
+            var1 += 1
+            for z in range(var1):
+                print(z)
+                var2 += list[z]
+
+            tri_list.append(var2)
+
+    print(tri_list)
+    '''
+    for i in range(n):
+        counter += 1
+        list.append(i + 1)
+        #print(list)
+        for f in range(len(list)):
+            print(list)
+            var1 += list[f]
+            tri_list.append(var1)
+    list.clear()
+
+    print(tri_list)
+
+
+triangular_numbers(5)
+
+
+
+
 
 
 def backwards(word):
