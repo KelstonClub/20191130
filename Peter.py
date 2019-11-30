@@ -51,7 +51,13 @@ def odd_numbers(n):
     eg odd_numbers(5) should return:
     [1, 3, 5, 7, 9]
     """
-    raise NotImplementedError
+    n_list = []
+    counter = 1
+    n_list.append(counter)
+    while len(n_list) != n:
+        counter = counter+2
+        n_list.append(counter)
+    print(n_list)
 
 
 def factorial(n):
@@ -121,4 +127,4 @@ def palindromes(n):
     raise NotImplementedError
 
 if __name__ == '__main__':
-    print(numbers(8))
+    print(odd_numbers(7))
