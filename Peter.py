@@ -38,7 +38,11 @@ def numbers(n):
     eg numbers(8) should return:
     [1, 2, 3, 4, 5, 6, 7, 8]
     """
-    raise NotImplementedError
+    n_list = []
+    for i in range(n):
+        n_list.append(i)
+    n_list.append(i+1)
+    print(n_list)
 
 
 def odd_numbers(n):
@@ -115,3 +119,6 @@ def palindromes(n):
     eg LEVEL or RADAR
     """
     raise NotImplementedError
+
+if __name__ == '__main__':
+    print(numbers(8))
