@@ -54,5 +54,12 @@ class TestChallenges(unittest.TestCase):
         expected = set(["warned", "redawn", "andrew", "warden"])
         self.assertEqual(actual, expected)
 
+    def test_palindromes(self):
+        length = 6
+        actual = set(challenges.palindromes(length))
+        words = set(w for w in open("words.txt").read().split() if len(w) == length)
+        expected = set(w for w in words if w == w[::-1])
+        self.assertEqual(actual, expected)
+
 if __name__ == "__main__":
     unittest.main()

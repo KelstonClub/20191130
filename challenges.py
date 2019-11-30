@@ -107,3 +107,11 @@ def anagrams(word):
     """
     raise NotImplementedError
 
+
+def palindromes(n):
+    """Using the words in words.txt find all palindromes of n letters
+
+    A palindrome is a word which is spelt the same backwaards and forwards
+    eg LEVEL or RADAR
+    """
+    raise NotImplementedError
